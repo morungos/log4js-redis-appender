@@ -1,0 +1,49 @@
+{
+  "name": "log4js-redis-appender",
+  "version": "0.1.0",
+  "description": "A log4js appender for redis using existing clients",
+  "keywords": [
+    "log4js",
+    "redis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:morungos/log4js-redis-appender.git"
+  },
+  "author": "Stuart Watt <stuart@morungos.com>",
+  "homepage": "https://github.com/morungos/log4js-redis-appender",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "log4js": "3.x"
+  },
+  "optionalDependencies": {
+    "ioredis": "^4.2.0"
+  },
+  "devDependencies": {
+    "@log4js-node/sandboxed-module": "^2.1.1",
+    "jest": "^23.6.0",
+    "log4js": "^3.0.6"
+  },
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build/"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
+  }
+}
